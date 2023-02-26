@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Table</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="Interactive.css">
+</head>
+<body class="container">
+<br>
+
+<blockquote class="blockquote text-center">
+    <p id="para1" class="mb-0">Create your own sports team!</p>
+    </blockquote>
+    <br>
+<div class="card">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-sm">
+                <div class="form-group">
+                    <label for="new-number">Number</label>
+                    <input type ="text" class="form-control" id="new-number">
+                </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-sm">
+                <div class="form-group">
+                    <label for="new-first">First Name</label>
+                    <input type ="text" class="form-control" id="new-first">
+                </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-sm">
+                <div class="form-group">
+                    <label for="new-last">Last Name</label>
+                    <input type ="text" class="form-control" id="new-last">
+                </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-sm">
+                <div class="form-group">
+                    <label for="new-number">Position</label>
+                    <input type ="text" class="form-control" id="new-pos">
+                </div>
+            </div>
+            <button id="add" class="btn btn-success form-control">Add Player</button>
+         </div>
+    </div>
+</div>
+
+<table id="team" class="table table-dark">
+<tr>
+    <th>Number</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Position</th>
+</tr>
+</table>
+
+    <script src="Interactive.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+</body>
+</html>
